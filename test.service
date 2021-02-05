@@ -1,0 +1,11 @@
+[Unit]
+Description=hello_env.js - making your environment variables rad
+Documentation=https://example.com/
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/node /home/azureuser/test_lab1/app.js
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
