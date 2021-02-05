@@ -88,7 +88,7 @@ resource "null_resource" "run" {
        "sudo apt install git -y",
        "git clone https://github.com/fame4458/test_lab1.git",
        "cd test_lab1",
-       "sudo git checkout develop"
+       "sudo git checkout develop",
        "npm install",
        "sudo mv test.service /lib/systemd/system/",
        "sudo systemctl enable test.service",
